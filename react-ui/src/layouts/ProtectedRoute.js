@@ -7,16 +7,16 @@ import SweetAlert from "react-bootstrap-sweetalert";
 export const ProtectedRoute = ({ ...rest }) => {
   const history = useHistory();
   let { user } = useAuth();
-  if (!user || !user.token || user.token === "") {
-    return (
-      <SweetAlert
-        title="You must be signed in!"
-        onCancel={() => history.push("/auth/signin")}
-        onConfirm={() => history.push("/auth/signin")}
-        confirmBtnCssClass={"px-5"}
-      />
-    );
-  }
+  // if (!user || !user.token || user.token === "") {
+  //   return (
+  //     <SweetAlert
+  //       title="You must be signed in!"
+  //       onCancel={() => history.push("/auth/signin")}
+  //       onConfirm={() => history.push("/auth/signin")}
+  //       confirmBtnCssClass={"px-5"}
+  //     />
+  //   );
+  // }
 
   return <Route {...rest} />;
 };
