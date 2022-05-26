@@ -122,7 +122,7 @@ export default function Dashboard(props) {
               {...rest}
             />
           </Portal>
-          {getRoute() ? (
+          {/* {getRoute() ? (
             <PanelContent>
               <PanelContainer>
                 <Switch>
@@ -131,7 +131,7 @@ export default function Dashboard(props) {
                 </Switch>
               </PanelContainer>
             </PanelContent>
-          ) : null}
+          ) : null} */}
           <Footer />
           <Portal>
             <FixedPlugin
